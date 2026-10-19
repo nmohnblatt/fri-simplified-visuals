@@ -145,7 +145,7 @@
     <div class="controls">
       <div class="control">
         <label for="theta">\(\theta\)</label>
-        <input id="theta" type="range" min="0" max="1" step="0.005" value="0.5">
+        <input id="theta" type="range" min="0" max="1" step="0.005" value="0.5" title="Double-click to reset to θ = 0.5">
         <span class="val" id="theta-val">0.500</span>
       </div>
       <div class="control">
@@ -396,6 +396,7 @@ function initErrors() {
   }
 
   thetaIn.addEventListener('input', render);
+  thetaIn.addEventListener('dblclick', () => { thetaIn.value = DEFAULTS.theta; render(); });
   repsIn.addEventListener('input', render);
   mcaIns.forEach(r => r.addEventListener('change', render));
   document.getElementById('reset').addEventListener('click', () => {
