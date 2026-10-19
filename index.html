@@ -37,6 +37,7 @@
   main { max-width: 1100px; margin: 0 auto; padding: 24px 16px 24px; }
   footer { max-width: 1100px; margin: 0 auto; padding: 16px 16px 40px; text-align: center; border-top: 1px solid var(--border); font-size: 12px; color: var(--text-3); }
   footer p { max-width: 640px; margin: 0 auto; }
+  footer p + p { margin-top: 8px; }
   h1 { font-size: 20px; font-weight: 600; margin: 0 0 16px; }
   .sub { color: var(--text-2); margin: 0 0 20px; font-size: 14px; }
   .sub:has(+ .sub) { margin-bottom: 6px; }   /* consecutive paragraphs sit close together */
@@ -214,6 +215,7 @@
 </main>
 <footer>
   <p>Designed by Nicolas Mohnblatt using Claude Code (Fable 5.1), based on the paper <a href="https://ia.cr/2025/1993"><em>A Simplified Round-by-round Soundness Proof of FRI</em></a> by Albert Garreta, Nicolas Mohnblatt and Benedikt Wagner.</p>
+  <p>This work is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>. Math rendering by <a href="https://www.mathjax.org/">MathJax</a> (Apache 2.0).</p>
 </footer>
 
 <script>
