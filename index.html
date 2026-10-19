@@ -186,7 +186,8 @@
         </div>
       </div>
       <p class="hint">A better mutual correlated agreement bound keeps \(\varepsilon^{\mathsf{mca}}(\gamma)\) small for larger values of \(\gamma\), so the curve shoots up further to the right. A worse bound does the opposite.</p>
-    <p class="hint">Moving from "Default" to "Worse bound" illustrates what happens when parameters were set using conjectures about the MCA error that are later disproven. On the other hand, moving from "Default" to "Better bound" illustrates what happens when new results are established beyond the Johnson bound.</p>
+    <p class="hint">Moving from "Default" to "Worse bound" illustrates what happens when parameters were set using conjectures about the MCA error that are later disproven. Notice that the folding round error \( \varepsilon^{\mathsf{fold}}_i(\delta) \) increases. To compensate for this, one needs to set the trade-off parameter \(\theta\) lower. This modification then increases the folding round error, which requires to increase the number of repetitions \(t\) to compensate.</p>
+    <p class="hint">On the other hand, moving from "Default" to "Better bound" illustrates what happens when new results are established beyond the Johnson bound. In this case, the folding round error \( \varepsilon^{\mathsf{fold}}_i(\delta) \) decreases. The decrease gives us more space to increase the trade-off parameter \(\theta\). As we increase \(\theta\), we also decrease the query round error; this may allow us to reduce the number of repetitions \(t\).</p>
     </details>
   </section>
 
